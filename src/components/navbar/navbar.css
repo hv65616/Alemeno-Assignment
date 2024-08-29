@@ -1,0 +1,75 @@
+.navbar-wrapper {
+  padding: 15px 60px;
+  background-color: #f2f2f2;
+  font-family: "Urbanist";
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
+}
+.navbar-right-button {
+  cursor: pointer;
+  color: #1f1c14 !important;
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.navbar-right-button a {
+  color: #1f1c14 !important;
+  text-decoration: none;
+}
+.navbar-right-button:hover {
+  color: #fab900;
+  font-family: "Urbanist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    padding: 15px 20px;
+  }
+  .navbar-left {
+    width: 30%;
+  }
+  .navbar-right {
+    width: 70%;
+  }
+  .navbar-left img {
+    width: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar-wrapper {
+    padding: 15px 10px;
+  }
+
+  .navbar-left img {
+    width: 100px;
+  }
+  .navbar-right-button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .navbar-left img {
+    width: 80px;
+  }
+}

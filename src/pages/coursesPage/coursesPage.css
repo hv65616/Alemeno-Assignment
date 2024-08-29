@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.courses-page {
+  padding: 40px 60px;
+}
+.courses-top-banner-wrapper {
+  border-radius: 20px;
+  background: #fff3e8;
+  margin-inline: 20px;
+}
+.courses-top-banner {
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: row;
+}
+.courses-top-banner-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.courses-top-banner-right {
+  width: 40%;
+}
+.courses-top-banner-left-heading {
+  color: #1f1c14;
+  font-family: "Urbanist";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.courses-top-banner-left-subheading {
+  color: #1f1c14;
+  font-family: "Urbanist";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.courses-top-banner-left-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+.courses-top-banner-right-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.courses-top-banner-left-button-text {
+  border-radius: 10px;
+  background: var(--Brand, #fab900);
+  padding: 6px 16px;
+  box-shadow: 0px 5px 40px 0px rgba(248, 208, 113, 0.3);
+  color: #1f1c14;
+  text-align: center;
+  font-family: "Urbanist";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.12px;
+}
+.courses-top-banner-left-button-text a {
+  text-decoration: none;
+}
+.course-banner {
+  width: 200px;
+  height: 200px;
+}
+
+.courses-mid-wrapper {
+  margin: 40px 20px 10px 20px;
+}
+
+/*Cards Section*/
+.courses-course-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+.courses-course-card {
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 50px 80px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.courses-course-card-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 0px;
+  height: 160px;
+  cursor: pointer;
+  gap: 10px;
+}
+.like-button {
+  cursor: pointer;
+}
+.courses-course-card-top-svg {
+  height: 100%;
+  width: 100%;
+}
+.courses-course-card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.courses-course-card-bottom-heading {
+  color: #1f1c14;
+  text-align: center;
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  cursor: pointer;
+}
+.courses-course-card-bottom-content {
+  text-align: center;
+  color: rgba(31, 28, 20, 0.7);
+  font-family: "Urbanist";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.courses-course-card-bottom-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.courses-course-card-bottom-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Urbanist";
+  gap: 10px;
+  color: rgba(31, 28, 20, 0.7);
+}
+.courses-course-card-bottom-second-ins {
+  font-weight: 600;
+  font-size: 16px;
+}
+.courses-course-card-bottom-second-price {
+  font-size: 14px;
+  font-family: 500;
+}
+
+@media (max-width: 768px) {
+  .courses-course-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .courses-page {
+    padding: 40px;
+  }
+  .courses-top-banner-left {
+    width: 100%;
+  }
+  .courses-top-banner-right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-course-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .courses-page {
+    padding: 40px 20px;
+  }
+  .courses-top-banner-left-button-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 380px) {
+  .courses-top-banner {
+    padding: 20px 30px;
+  }
+}

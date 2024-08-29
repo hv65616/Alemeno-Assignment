@@ -1,0 +1,132 @@
+.dashboard-page {
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: #f9f9f9;
+  }
+  .dashboard-main {
+    display: flex;
+    background-color: #fff;
+    flex-direction: row;
+    padding-inline: 60px;
+    justify-content: space-between;
+    border-radius: 20px;
+  }
+  .dashboard-top-wrapper-heading {
+    color: var(--Text-main, #1f1c14);
+    text-align: center;
+    font-family: "Urbanist";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  
+  .dashboard-bottom-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  .dashboard-bottom-card-top {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    height: 120px;
+    cursor: pointer;
+  }
+  .dashboard-bottom-card-top-svg {
+    height: 100%;
+    width: 100%;
+  }
+  .dashboard-bottom-card {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 50px 80px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+  }
+  .dashboard-bottom-card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .dashboard-bottom-card-bottom-heading {
+    color: #1f1c14;
+    text-align: center;
+    font-family: "Urbanist";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    cursor: pointer;
+  }
+  .dashboard-bottom-card-bottom-content {
+    text-align: center;
+    color: rgba(31, 28, 20, 0.7);
+    font-family: "Urbanist";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .dashboard-bottom-card-bottom-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .dashboard-bottom-card-bottom-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Urbanist";
+    gap: 10px;
+    color: rgba(31, 28, 20, 0.7);
+  }
+  .dashboard-bottom-card-bottom-second-ins {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .dashboard-bottom-card-bottom-second-price {
+    font-size: 14px;
+    font-family: 500;
+  }
+  .dashboard-bottom-card-bottom-button {
+    border-radius: 10px;
+    background: var(--Brand, #fab900);
+    padding: 6px 16px;
+    text-align: center;
+    font-family: "Urbanist";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.12px;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .dashboard-bottom-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .dashboard-page {
+      padding: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-bottom-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+    .dashboard-page {
+      padding: 40px 20px;
+    }
+  }
+  
